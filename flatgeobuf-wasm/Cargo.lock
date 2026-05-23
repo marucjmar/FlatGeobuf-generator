@@ -670,6 +670,7 @@ dependencies = [
 [[package]]
 name = "flatgeobuf"
 version = "6.0.1"
+source = "git+https://github.com/marucjmar/flatgeobuf#53c434e7e5342681846bf7d009ff95ec6e4126ea"
 dependencies = [
  "byteorder",
  "bytes",
