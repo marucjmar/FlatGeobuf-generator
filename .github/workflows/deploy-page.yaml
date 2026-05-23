@@ -52,14 +52,6 @@ jobs:
         run: cargo install wasm-pack
 
       # =========================
-      # Build WASM
-      # =========================
-      - name: Build wasm
-        run: |
-          cd flatgeobuf-wasm
-          wasm-pack build --target bundler --release
-
-      # =========================
       # Build Vite
       # =========================
       - name: Build app
@@ -71,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist/*
 
   deploy:
     needs: build
