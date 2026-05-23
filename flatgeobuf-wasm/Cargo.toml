@@ -1,0 +1,16 @@
+[package]
+name = "flatgeobuf-wasm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+flatgeobuf = { path = "/Users/marcin/development/flatgeobuf/src/rust/" }
+geozero = "0.15.1"
+wasm-bindgen = "0.2"
+console_error_panic_hook = "0.1"
+
+[dev-dependencies]
+cargo-watch = "8.5.3"
+
+[lib]
+crate-type = ["cdylib"]

@@ -1,0 +1,117 @@
+body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b1220;
+      font-family: system-ui, sans-serif;
+      color: #e5e7eb;
+    }
+
+    .card {
+      width: 420px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      margin: 0 0 16px 0;
+      font-size: 18px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    input[type="file"],
+    input[type="number"] {
+      width: 90%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #374151;
+      background: #0f172a;
+      color: #e5e7eb;
+      outline: none;
+    }
+
+    .bbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .bbox-title {
+      margin-top: 14px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #60a5fa;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+
+    .hint {
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 10px;
+    }
+
+
+      /* ...twoje style... */
+
+  .hidden {
+    display: none;
+  }
+
+  .loader-wrap {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .spinner {
+    width: 34px;
+    height: 34px;
+    border: 3px solid #374151;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader-text {
+    font-size: 12px;
+    color: #9ca3af;
+  }

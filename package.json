@@ -1,0 +1,24 @@
+{
+  "name": "flatcon",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:setup": "pnpm build:wasm && pnpm i",
+    "dev": "concurrently \"pnpm dev:vite\" \"pnpm dev:wasm\"",
+    "dev:vite": "vite",
+    "dev:wasm": "cargo watch -C flatgeobuf-wasm -i pkg -s \"wasm-pack build --target web\"",
+    "build:wasm": "cd flatgeobuf-wasm && wasm-pack build --target web",
+    "build": "pnpm build:wasm && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "comlink": "^4.4.2",
+    "flatgeobuf-wasm": "workspace:*"
+  }
+}

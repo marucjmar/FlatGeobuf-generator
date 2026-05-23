@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <title>GeoJson to FlatGeobuf</title>
+  </head>
+  <body>
+    <div class="card">
+    <h2>📦 Offline GeoJson to FlatGeobuf 🔥</h2>
+
+    <form id="form">
+      <div class="field">
+        <label>GeoJson File to transform</label>
+        <input type="file" id="fileInput" />
+      </div>
+
+      <div class="loader-wrap" id="loader">
+        <div class="spinner"></div>
+        <div class="loader-text">Processing...</div>
+      </div>
+
+      <div class="hint">
+        This data will not be uploaded anywhere, the conversion happens entirely in your browser using WebAssembly.
+        The data will be destroyed once you close the page. You can safely upload large files, but be aware that the conversion process may take some time and consume significant resources on your device.
+        The resulting FlatGeobuf file will be downloaded to your computer.
+      </div>
+    </form>
+  </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
