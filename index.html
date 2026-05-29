@@ -14,6 +14,11 @@
     <h2>📦 Offline GeoJson to FlatGeobuf 🔥</h2>
 
     <form id="form">
+      <div class="field" style="display: flex; align-items: center;">
+        <input type="checkbox" id="writeIndex" checked="true">
+        <label style="display: inline-block; margin-bottom: 0;" for="writeIndex">Write spatial index</label>
+      </div>
+
       <div class="field">
         <label>GeoJson File to transform</label>
         <input type="file" id="fileInput" />

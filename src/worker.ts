@@ -1,5 +1,5 @@
 import * as Comlink from "comlink";
-import init, { encode as enc } from "flatgeobuf-wasm";
+import init, { encode as enc, PartialFgbWriterOptions } from "flatgeobuf-wasm";
 
 init().then(() => {
   console.log("WASM initialized");
@@ -8,8 +8,8 @@ init().then(() => {
 });
 
 export class API {
-  public encode(bytes: Uint8Array): Uint8Array {
-    return enc(bytes);
+  public encode(bytes: Uint8Array, opts: PartialFgbWriterOptions): Uint8Array {
+    return enc(bytes, opts);
   }
 }
 
