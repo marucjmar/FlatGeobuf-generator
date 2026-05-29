@@ -48,11 +48,8 @@ jobs:
       - name: Cache cargo
         uses: Swatinem/rust-cache@v2
 
-      - name: Install wasm-pack
-        run: |
-          if ! command -v wasm-pack >/dev/null 2>&1; then
-            cargo install wasm-pack
-          fi
+      - name: Setup wasm-pack
+        uses: taiki-e/install-action@wasm-pack
 
       # =========================
       # Build Vite
