@@ -50,6 +50,9 @@ jobs:
 
       - name: Cache cargo
         uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            flatgeobuf-wasm -> target
 
       - name: Setup wasm-pack
         uses: taiki-e/install-action@wasm-pack
