@@ -5,7 +5,7 @@ A lightweight tool for converting **GeoJSON files into FlatGeobuf (FGB)** direct
 ---
 
 👉 Try it here:  
-https://marucjmar.github.io/flatbuf-generator/
+https://marucjmar.github.io/FlatGeobuf-generator/
 
 ## 🚀 What is this?
 
@@ -84,7 +84,7 @@ This tool is useful for:
 ## 🔗 Live Demo
 
 👉 Try it here:  
-https://marucjmar.github.io/flatbuf-generator/
+https://marucjmar.github.io/FlatGeobuf-generator/
 
 ---
 
